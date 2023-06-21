@@ -1,5 +1,10 @@
 --local WeakAuras = WeakAuras
 local txtPath = "Interface\\AddOns\\WeakAurasStopMotion\\Textures\\"
+local fxpwTextData = {
+  ["count"] = 90,
+  ["rows"] = 8,
+  ["columns"] = 16
+}
 WeakAuras.StopMotion.texture_types.Basic = {
     ["Interface\\AddOns\\WeakAuras\\Media\\Textures\\stopmotion"] = "Example",
     ["Interface\\AddOns\\WeakAurasStopMotion\\Textures\\Basic\\circle"] = "Circle",
@@ -10,12 +15,10 @@ WeakAuras.StopMotion.texture_types.Basic = {
     ["Interface\\AddOns\\WeakAurasStopMotion\\Textures\\Basic\\fireball"] = "Fireball",
 }
 
-WeakAuras.StopMotion.texture_data = {
-  ["Interface\\AddOns\\WeakAurasStopMotion\\Textures\\Basic\\circle"] = {
-     ["count"] = 256,
-     ["rows"] = 16,
-     ["columns"] = 16
-  },
+WeakAuras.StopMotion.texture_data["Interface\\AddOns\\WeakAurasStopMotion\\Textures\\Basic\\circle"] = {
+  ["count"] = 256,
+  ["rows"] = 16,
+  ["columns"] = 16
 }
 
 WeakAuras.StopMotion.texture_types.Runes = {
@@ -55,6 +58,26 @@ WeakAuras.StopMotion.texture_types.Shaman = {
   [txtPath.."Shaman\\water_shield_90"] = "Water shield",
 }
 
+
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\l_bolt_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\l_chain_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\flameshock_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\lavaburst_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\feral_spirit_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\ghost_entropy_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\shaman_rage_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\glovers_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\speed_flask_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\l_shield_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\str_totem_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\fire_nova_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\stormstrike_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\lava_lash_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\spirit_wolf_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\vulc_totem_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Shaman\\water_shield_90"] = fxpwTextData
+
+
 WeakAuras.StopMotion.texture_types.Warrior = {
   [txtPath.."Warrior\\mortal_90"] = "Mortal strike",
   [txtPath.."Warrior\\over_90"] = "Overpower",
@@ -66,6 +89,17 @@ WeakAuras.StopMotion.texture_types.Warrior = {
   [txtPath.."Warrior\\bstorm_90"] = "Bladestorm",
   [txtPath.."Warrior\\whirl_90"] = "Whirlwind",
 }
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\mortal_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\over_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\execute_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\execute2_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\charge_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\slice_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\rend_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\bstorm_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Warrior\\whirl_90"] = fxpwTextData
+
+
 
 WeakAuras.StopMotion.texture_types.Priest = {
   [txtPath.."Priest\\dispersion_90"] = "Dispersion",
@@ -78,6 +112,17 @@ WeakAuras.StopMotion.texture_types.Priest = {
   [txtPath.."Priest\\nyaloth_90"] = "Nyaloth",
 }
 
+
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\dispersion_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\dplague_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\invis_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\mindshear_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\sfiend_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\siphomana_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\stoicism_90"] = fxpwTextData
+WeakAuras.StopMotion.texture_data[txtPath.."Priest\\nyaloth_90"] = fxpwTextData
+
 WeakAuras.StopMotion.texture_types.Race = {
   [txtPath.."Race\\LEredar"] = "LEredar",
 }
+WeakAuras.StopMotion.texture_data[txtPath.."Race\\LEredar"] = fxpwTextData
